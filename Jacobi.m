@@ -8,7 +8,7 @@ function [x_new,iter] = Jacobi(A,b)
     while (it <= 1000) && (tol >= 10.^(-6))
         x_old = x_new;
         for j = 1:N
-            for i = 1:N
+            for i = 1:N 
                 if j ~= i
                     y = y + A(j,i) * x_old(i);
                 end
