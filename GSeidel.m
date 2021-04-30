@@ -1,4 +1,4 @@
-function [x_new,iter] = GSeidel(A,b) 
+function [x_new,iter] = GSeidel(A,b)
     it = 1; 
     y = 0; 
     z = 0; 
