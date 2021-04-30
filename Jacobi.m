@@ -1,7 +1,7 @@
 function [x_new,iter] = Jacobi(A,b)
     it = 1; 
     y = 0;
-    N = size(A,1); 
+    N = size(A,1);
     x_new = zeros(N,1); 
     x_old = zeros(N,1);
     tol = 1;
