@@ -8,7 +8,7 @@ function [x_new,iter] = GSeidel(A,b)
     tol = 1;
     while (it <= 1000) && (tol >= 10.^(-6))
         x_old = x_new;
-        for j = 1:N
+        for j = 1:N 
             for i = 1:(j - 1)
                 y = y + A(j,i) * x_new(i);
             end
