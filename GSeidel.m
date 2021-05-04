@@ -6,7 +6,7 @@ function [x_new,iter] = GSeidel(A,b)
     x_new = zeros(N,1); 
     x_old = zeros(N,1);
     tol = 1;
-    while (it <= 1000) && (tol >= 10.^(-6))
+    while (it <= 1000) && (tol >= 10.^(-6)) 
         x_old = x_new;
         for j = 1:N 
             for i = 1:(j - 1)
