@@ -6,7 +6,7 @@ function [x_new,iter] = Jacobi(A,b)
     x_old = zeros(N,1); 
     tol = 1;
     while (it <= 1000) && (tol >= 10.^(-6)) 
-        x_old = x_new; 
+        x_old = x_new;
         for j = 1:N
             for i = 1:N 
                 if j ~= i
