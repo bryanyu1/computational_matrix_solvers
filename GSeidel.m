@@ -3,7 +3,7 @@ function [x_new,iter] = GSeidel(A,b)
     y = 0; 
     z = 0; 
     N = size(A,1);
-    x_new = zeros(N,1); 
+    x_new = zeros(N,1);
     x_old = zeros(N,1);
     tol = 1;
     while (it <= 1000) && (tol >= 10.^(-6)) 
